@@ -1,0 +1,27 @@
+{
+  "name": "project02",
+  "version": "1.0.0",
+  "description": "Horoscope calculator https://github.com/parrabellum1990/horoscope.git",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parrabellum1990/horoscope.git"
+  },
+  "keywords": [
+    "horoscope",
+    "calendar"
+  ],
+  "author": "Andreenko Alexey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/parrabellum1990/horoscope/issues"
+  },
+  "homepage": "https://github.com/parrabellum1990/horoscope#readme"
+}
