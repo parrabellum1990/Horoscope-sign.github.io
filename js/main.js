@@ -125,6 +125,9 @@ $(document).ready(function () {
   $('#September').click(function (e) {
     $('#monthStatus').html($('#September').text());
   });
+  $('#October').click(function (e) {
+    $('#monthStatus').html($('#October').text());
+  });
   $('#November').click(function (e) {
     $('#monthStatus').html($('#November').text());
   });
