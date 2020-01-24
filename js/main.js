@@ -1,5 +1,7 @@
 $(document).ready(function () {
+
   // finding index of a birth day:
+
   $('#birthDay1').click(function (e) {
     $('#dayStatus').html($('#birthDay1').text());
   });
@@ -94,6 +96,42 @@ $(document).ready(function () {
     $('#dayStatus').html($('#birthDay31').text());
   });
 
+  // finding index of a month birth:
+
+  $('#January').click(function (e) {
+    $('#monthStatus').html($('#January').text());
+  });
+  $('#February').click(function (e) {
+    $('#monthStatus').html($('#February').text());
+  });
+  $('#March').click(function (e) {
+    $('#monthStatus').html($('#March').text());
+  });
+  $('#April').click(function (e) {
+    $('#monthStatus').html($('#April').text());
+  });
+  $('#May').click(function (e) {
+    $('#monthStatus').html($('#May').text());
+  });
+  $('#June').click(function (e) {
+    $('#monthStatus').html($('#June').text());
+  });
+  $('#July').click(function (e) {
+    $('#monthStatus').html($('#July').text());
+  });
+  $('#August').click(function (e) {
+    $('#monthStatus').html($('#August').text());
+  });
+  $('#September').click(function (e) {
+    $('#monthStatus').html($('#September').text());
+  });
+  $('#November').click(function (e) {
+    $('#monthStatus').html($('#November').text());
+  });
+  $('#December').click(function (e) {
+    $('#monthStatus').html($('#December').text());
+  });
+
 
 
 
@@ -105,8 +143,14 @@ $(document).ready(function () {
   $('#getResult').click(function (e) {
     e.preventDefault();
     var birthDay = $('#dayStatus').text();
-    alert(birthDay + " Ах ты долбоеб");
+    alert(birthDay);
   });
 
+  // taking birth month index and put their to variable 'birthMonth':
+  $('#getResult').click(function (e) {
+    e.preventDefault();
+    var birthMonth = $('#monthStatus').text();
+    alert(birthMonth);
+  });
 });
 
