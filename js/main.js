@@ -137,23 +137,72 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-  // taking birth day index and put their to variable 'birthDay':
   $('#getResult').click(function (e) {
     e.preventDefault();
     var birthDay = $('#dayStatus').text();
-    alert(birthDay);
+    var birthMonth = $('#monthStatus').text();
+    // Козерог
+    if (birthMonth == 'Декабрь' && birthDay > 21 || birthMonth == 'Январь' && birthDay < 20) {
+      alert('Козерог');
+    } else {
+      // Водолей
+      if (birthMonth == 'Январь' && birthDay > 19 || birthMonth == 'Февраль' && birthDay < 20) {
+        alert('Водолей');
+      } else {
+        // Рыбы
+        if (birthMonth == 'Февраль' && birthDay > 19 || birthMonth == 'Март' && birthDay <= 20) {
+          alert('Рыбы');
+        } else {
+          // Овен
+          if (birthMonth == 'Март' && birthDay > 20 || birthMonth == 'Апрель' && birthDay < 21) {
+            alert('Овен');
+          } else {
+            // Телец
+            if (birthMonth == 'Апрель' && birthDay > 20 || birthMonth == 'Май' && birthDay < 21) {
+              alert('Телец');
+            } else {
+              // Близнецы
+              if (birthMonth == 'Май' && birthDay > 20 || birthMonth == 'Июнь' && birthDay < 21) {
+                alert('Близнецы');
+              } else {
+                // Рак
+                if (birthMonth == 'Июнь' && birthDay >= 21 || birthMonth == 'Июль' && birthDay <= 22) {
+                  alert('Рак');
+                } else {
+                  // Лев
+                  if (birthMonth == 'Июль' && birthDay >= 23 || birthMonth == 'Август' && birthDay <= 22) {
+                    alert('Лев');
+                  } else {
+                    // Дева
+                    if (birthMonth == 'Август' && birthDay >= 23 || birthMonth == 'Сентябрь' && birthDay <= 22) {
+                      alert('Дева');
+                    } else {
+                      // Весы
+                      if (birthMonth == 'Сентябрь' && birthDay >= 23 || birthMonth == 'Октябрь' && birthDay <= 22) {
+                        alert('Весы');
+                      } else {
+                        // Скорпион
+                        if (birthMonth == 'Октябрь' && birthDay >= 23 || birthMonth == 'Ноябрь' && birthDay <= 22) {
+                          alert('Скорпион');
+                        } else {
+                          // Стрелец
+                          if (birthMonth == 'Ноябрь' && birthDay >= 23 || birthMonth == 'Декабрь' && birthDay <= 21) {
+                            alert('Стрелец');
+                          } else {
+                            
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   });
 
-  // taking birth month index and put their to variable 'birthMonth':
-  $('#getResult').click(function (e) {
-    e.preventDefault();
-    var birthMonth = $('#monthStatus').text();
-    alert(birthMonth);
-  });
 });
 
