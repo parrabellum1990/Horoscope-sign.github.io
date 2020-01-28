@@ -8321,3 +8321,9 @@ a.text-dark:hover, a.text-dark:focus {
 .menu-limiter {
   height: 300px;
   overflow-y: scroll; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: inline; }

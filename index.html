@@ -102,7 +102,7 @@
               <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="badge badge-light mr-2">1990</span>
+                  <span id="yearStatus" class="badge badge-light mr-2">1990</span>
                   Год вашего рождения
                 </button>
                 <div class="dropdown-menu menu-limiter" aria-labelledby="dropdownMenuButton">
@@ -128,14 +128,14 @@
           <div class="col mt-5">
             <div class="alert alert-danger" role="alert">
               <button id="getResult" type="button" class="btn btn-success btn-block">Узнать</button>
-              <button type="button" class="btn btn-danger btn-block">Очистить</button>
+              <button id="getClear" type="button" class="btn btn-danger btn-block">Очистить</button>
             </div>
           </div>
         </div>
         <!-- result image of zodiac -->
         <div class="row">
           <div class="col text-center">
-            <img id="zodiacImage" width="20%" src="" alt="Zodiac">
+            <img id="zodiacImage" class="" width="20%" src="img/main-img.svg" alt="Zodiac">
           </div>
         </div>
         <!-- result -->
