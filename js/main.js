@@ -135,7 +135,7 @@ $(document).ready(function () {
     $('#monthStatus').html($('#December').text());
   });
 
-
+  // finding your horoscope sign
 
   $('#getResult').click(function (e) {
     e.preventDefault();
@@ -143,53 +143,53 @@ $(document).ready(function () {
     var birthMonth = $('#monthStatus').text();
     // Козерог
     if (birthMonth == 'Декабрь' && birthDay > 21 || birthMonth == 'Январь' && birthDay < 20) {
-      alert('Козерог');
+      $('#zodiacSign').text('Козерог');
     } else {
       // Водолей
       if (birthMonth == 'Январь' && birthDay > 19 || birthMonth == 'Февраль' && birthDay < 20) {
-        alert('Водолей');
+        $('#zodiacSign').text('Водолей');
       } else {
         // Рыбы
         if (birthMonth == 'Февраль' && birthDay > 19 || birthMonth == 'Март' && birthDay <= 20) {
-          alert('Рыбы');
+          $('#zodiacSign').text('Рыбы');
         } else {
           // Овен
           if (birthMonth == 'Март' && birthDay > 20 || birthMonth == 'Апрель' && birthDay < 21) {
-            alert('Овен');
+            $('#zodiacSign').text('Овен');
           } else {
             // Телец
             if (birthMonth == 'Апрель' && birthDay > 20 || birthMonth == 'Май' && birthDay < 21) {
-              alert('Телец');
+              $('#zodiacSign').text('Телец');
             } else {
               // Близнецы
               if (birthMonth == 'Май' && birthDay > 20 || birthMonth == 'Июнь' && birthDay < 21) {
-                alert('Близнецы');
+                $('#zodiacSign').text('Близнецы');
               } else {
                 // Рак
                 if (birthMonth == 'Июнь' && birthDay >= 21 || birthMonth == 'Июль' && birthDay <= 22) {
-                  alert('Рак');
+                  $('#zodiacSign').text('Рак');
                 } else {
                   // Лев
                   if (birthMonth == 'Июль' && birthDay >= 23 || birthMonth == 'Август' && birthDay <= 22) {
-                    alert('Лев');
+                    $('#zodiacSign').text('Лев');
                   } else {
                     // Дева
                     if (birthMonth == 'Август' && birthDay >= 23 || birthMonth == 'Сентябрь' && birthDay <= 22) {
-                      alert('Дева');
+                      $('#zodiacSign').text('Дева');
                     } else {
                       // Весы
                       if (birthMonth == 'Сентябрь' && birthDay >= 23 || birthMonth == 'Октябрь' && birthDay <= 22) {
-                        alert('Весы');
+                        $('#zodiacSign').text('Весы');
                       } else {
                         // Скорпион
                         if (birthMonth == 'Октябрь' && birthDay >= 23 || birthMonth == 'Ноябрь' && birthDay <= 22) {
-                          alert('Скорпион');
+                          $('#zodiacSign').text('Скорпион');
                         } else {
                           // Стрелец
                           if (birthMonth == 'Ноябрь' && birthDay >= 23 || birthMonth == 'Декабрь' && birthDay <= 21) {
-                            alert('Стрелец');
+                            $('#zodiacSign').text('Стрелец');
                           } else {
-                            
+                            alert('Вы не ввели месяц либо день вашего рождения! Дождитесь когда "рак" на горе свиснет и повторите попытку!')
                           }
                         }
                       }
@@ -202,7 +202,16 @@ $(document).ready(function () {
         }
       }
     }
+
+    // add function to add image
+    
+    $('#getResult').click(function (e) {
+      e.preventDefault();
+      $('#zodiacImage').attr('src', 'img/svg/capricorn.svg');
+    });
   });
 
 });
+
+
 
