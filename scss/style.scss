@@ -32,3 +32,10 @@
 .show{
   display: inline;
 }
+
+.img-padding{
+  padding: 30px;
+  border-radius: 50%;
+  background-color: rgba(133, 83, 10, .5);
+  box-shadow: 0 0 15px rgba(133, 83, 10, .5);
+}
