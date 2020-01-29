@@ -1,5 +1,14 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// option in dropdown with hover
+option{
+  padding: 5px 15px;
+}
+
+option:hover{
+  cursor: pointer;
+}
+
 // main background image
 .body-wrap {
   height: 100vh;

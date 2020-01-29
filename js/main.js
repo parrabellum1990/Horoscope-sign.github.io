@@ -154,52 +154,52 @@ $(document).ready(function () {
         // Рыбы
         if (birthMonth == 'Февраль' && birthDay > 19 || birthMonth == 'Март' && birthDay <= 20) {
           $('#zodiacSign').text('Рыбы');
-            $('#zodiacImage').attr('src', 'img/svg/pisces.svg');
+          $('#zodiacImage').attr('src', 'img/svg/pisces.svg');
         } else {
           // Овен
           if (birthMonth == 'Март' && birthDay > 20 || birthMonth == 'Апрель' && birthDay < 21) {
             $('#zodiacSign').text('Овен');
-              $('#zodiacImage').attr('src', 'img/svg/aries.svg');
+            $('#zodiacImage').attr('src', 'img/svg/aries.svg');
           } else {
             // Телец
             if (birthMonth == 'Апрель' && birthDay > 20 || birthMonth == 'Май' && birthDay < 21) {
               $('#zodiacSign').text('Телец');
-                $('#zodiacImage').attr('src', 'img/svg/taurus.svg');
+              $('#zodiacImage').attr('src', 'img/svg/taurus.svg');
             } else {
               // Близнецы
               if (birthMonth == 'Май' && birthDay > 20 || birthMonth == 'Июнь' && birthDay < 21) {
                 $('#zodiacSign').text('Близнецы');
-                  $('#zodiacImage').attr('src', 'img/svg/gemini.svg');
+                $('#zodiacImage').attr('src', 'img/svg/gemini.svg');
               } else {
                 // Рак
                 if (birthMonth == 'Июнь' && birthDay >= 21 || birthMonth == 'Июль' && birthDay <= 22) {
                   $('#zodiacSign').text('Рак');
-                    $('#zodiacImage').attr('src', 'img/svg/cancer.svg');
+                  $('#zodiacImage').attr('src', 'img/svg/cancer.svg');
                 } else {
                   // Лев
                   if (birthMonth == 'Июль' && birthDay >= 23 || birthMonth == 'Август' && birthDay <= 22) {
                     $('#zodiacSign').text('Лев');
-                      $('#zodiacImage').attr('src', 'img/svg/leo.svg');
+                    $('#zodiacImage').attr('src', 'img/svg/leo.svg');
                   } else {
                     // Дева
                     if (birthMonth == 'Август' && birthDay >= 23 || birthMonth == 'Сентябрь' && birthDay <= 22) {
                       $('#zodiacSign').text('Дева');
-                        $('#zodiacImage').attr('src', 'img/svg/virgo.svg');
+                      $('#zodiacImage').attr('src', 'img/svg/virgo.svg');
                     } else {
                       // Весы
                       if (birthMonth == 'Сентябрь' && birthDay >= 23 || birthMonth == 'Октябрь' && birthDay <= 22) {
                         $('#zodiacSign').text('Весы');
-                          $('#zodiacImage').attr('src', 'img/svg/libra.svg');
+                        $('#zodiacImage').attr('src', 'img/svg/libra.svg');
                       } else {
                         // Скорпион
                         if (birthMonth == 'Октябрь' && birthDay >= 23 || birthMonth == 'Ноябрь' && birthDay <= 22) {
                           $('#zodiacSign').text('Скорпион');
-                            $('#zodiacImage').attr('src', 'img/svg/scorpio.svg');
+                          $('#zodiacImage').attr('src', 'img/svg/scorpio.svg');
                         } else {
                           // Стрелец
                           if (birthMonth == 'Ноябрь' && birthDay >= 23 || birthMonth == 'Декабрь' && birthDay <= 21) {
                             $('#zodiacSign').text('Стрелец');
-                              $('#zodiacImage').attr('src', 'img/svg/saggittarius.svg');
+                            $('#zodiacImage').attr('src', 'img/svg/saggittarius.svg');
                           } else {
                             alert('Вы не ввели месяц либо день вашего рождения! Дождитесь когда "рак" на горе свиснет и повторите попытку!')
                           }
@@ -216,13 +216,18 @@ $(document).ready(function () {
     }
   });
   // clear:
-  $('#getClear').click(function (e) { 
+  $('#getClear').click(function (e) {
     e.preventDefault();
     $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign').text(''),
-    $('#zodiacImage').attr('src', 'img/main-img.svg');
+      $('#zodiacImage').attr('src', 'img/main-img.svg');
   });
-
+  // year:
+  var firstYear = 1900;
+  var lastYear = 2020;
+  for (var i = lastYear; i >= firstYear; i--) {
+    $('#dropdownValue').append('<option value="' + i + '">' + i + '</option>');
+  }
 });
 
-// YEAR SWITCH TO YEAR BRANCH
+
 
