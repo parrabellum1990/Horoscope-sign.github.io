@@ -221,13 +221,20 @@ $(document).ready(function () {
     $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign').text(''),
       $('#zodiacImage').attr('src', 'img/main-img.svg');
   });
+
   // year:
   var firstYear = 1900;
   var lastYear = 2020;
+  var optionEayr = [];
   for (var i = lastYear; i >= firstYear; i--) {
-    $('#dropdownValue').append('<option value="' + i + '">' + i + '</option>');
+    optionEayr[i] = '<option value="' + i + '">' + i + '</option>';
   }
+  $('#dropdownValue').append(optionEayr);
+
+  // year in span:
+  $('option').click(function (e) { 
+    e.preventDefault();
+    var clickedYear = $(this).html();
+    $('#yearStatus').text(clickedYear);
+  });
 });
-
-
-
