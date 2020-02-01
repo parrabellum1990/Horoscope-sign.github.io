@@ -218,7 +218,7 @@ $(document).ready(function () {
   // clear:
   $('#getClear').click(function (e) {
     e.preventDefault();
-    $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign').text(''),
+    $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign, #yourAnimal').text(''),
       $('#zodiacImage').attr('src', 'img/main-img.svg');
   });
 
@@ -232,9 +232,126 @@ $(document).ready(function () {
   $('#dropdownValue').append(optionEayr);
 
   // year in span:
-  $('option').click(function (e) { 
+  $('option').click(function (e) {
     e.preventDefault();
     var clickedYear = $(this).html();
     $('#yearStatus').text(clickedYear);
   });
+
+
+
+  var rat = [];
+  var bull = [];
+  var tiger = [];
+  var rabbit = [];
+  var dragon = [];
+  var snake = [];
+  var horse = [];
+  var goat = [];
+  var monkey = [];
+  var cock = [];
+  var dog = [];
+  var pig = [];
+  for (var i = 1900; i < 2021; i += 12) {
+    rat.push(i);
+  }
+  for (var i = 1901; i < 2022; i += 12) {
+    bull.push(i);
+  }
+  for (var i = 1902; i < 2023; i += 12) {
+    tiger.push(i);
+  }
+  for (var i = 1903; i < 2024; i += 12) {
+    rabbit.push(i);
+  }
+  for (var i = 1904; i < 2025; i += 12) {
+    dragon.push(i);
+  }
+  for (var i = 1905; i < 2026; i += 12) {
+    snake.push(i);
+  }
+  for (var i = 1906; i < 2027; i += 12) {
+    horse.push(i);
+  }
+  for (var i = 1907; i < 2028; i += 12) {
+    goat.push(i);
+  }
+  for (var i = 1908; i < 2029; i += 12) {
+    monkey.push(i);
+  }
+  for (var i = 1909; i < 2030; i += 12) {
+    cock.push(i);
+  }
+  for (var i = 1910; i < 2031; i += 12) {
+    dog.push(i);
+  }
+  for (var i = 1911; i < 2032; i += 12) {
+    pig.push(i);
+  }
+
+  $('#getResult').click(function (e) {
+    e.preventDefault();
+    for (var i = 0; i < rat.length; i++) {
+      if (rat[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Крыса');
+      }
+    }
+    for (var i = 0; i < bull.length; i++) {
+      if (bull[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Бык');
+      }
+    }
+    for (var i = 0; i < tiger.length; i++) {
+      if (tiger[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Тигр');
+      }
+    }
+    for (var i = 0; i < rabbit.length; i++) {
+      if (rabbit[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Кролик');
+      }
+    }
+    for (var i = 0; i < dragon.length; i++) {
+      if (dragon[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Дракон');
+      }
+    }
+    for (var i = 0; i < snake.length; i++) {
+      if (snake[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Змея');
+      }
+    }
+    for (var i = 0; i < horse.length; i++) {
+      if (horse[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Лошадь');
+      }
+    }
+    for (var i = 0; i < goat.length; i++) {
+      if (goat[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Коза');
+      }
+    }
+    for (var i = 0; i < monkey.length; i++) {
+      if (monkey[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Обезьяна');
+      }
+    }
+    for (var i = 0; i < cock.length; i++) {
+      if (cock[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Петух');
+      }
+    }
+    for (var i = 0; i < dog.length; i++) {
+      if (dog[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Собака');
+      }
+    }
+    for (var i = 0; i < pig.length; i++) {
+      if (pig[i] == $('#yearStatus').text()) {
+        $('#yourAnimal').text('Свинья');
+      }
+    }
+  });
+
 });
+
