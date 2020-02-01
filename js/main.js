@@ -294,61 +294,73 @@ $(document).ready(function () {
     for (var i = 0; i < rat.length; i++) {
       if (rat[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Крыса');
+        $('#yearImage').attr('src', 'img/year-animals/rat.svg');
       }
     }
     for (var i = 0; i < bull.length; i++) {
       if (bull[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Бык');
+        $('#yearImage').attr('src', 'img/year-animals/bull.svg');
       }
     }
     for (var i = 0; i < tiger.length; i++) {
       if (tiger[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Тигр');
+        $('#yearImage').attr('src', 'img/year-animals/tiger.svg');
       }
     }
     for (var i = 0; i < rabbit.length; i++) {
       if (rabbit[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Кролик');
+        $('#yearImage').attr('src', 'img/year-animals/rabbit.svg');
       }
     }
     for (var i = 0; i < dragon.length; i++) {
       if (dragon[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Дракон');
+        $('#yearImage').attr('src', 'img/year-animals/dragon.svg');
       }
     }
     for (var i = 0; i < snake.length; i++) {
       if (snake[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Змея');
+        $('#yearImage').attr('src', 'img/year-animals/snake.svg');
       }
     }
     for (var i = 0; i < horse.length; i++) {
       if (horse[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Лошадь');
+        $('#yearImage').attr('src', 'img/year-animals/horse.svg');
       }
     }
     for (var i = 0; i < goat.length; i++) {
       if (goat[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Коза');
+        $('#yearImage').attr('src', 'img/year-animals/goat.svg');
       }
     }
     for (var i = 0; i < monkey.length; i++) {
       if (monkey[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Обезьяна');
+        $('#yearImage').attr('src', 'img/year-animals/monkey.svg');
       }
     }
     for (var i = 0; i < cock.length; i++) {
       if (cock[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Петух');
+        $('#yearImage').attr('src', 'img/year-animals/cock.svg');
       }
     }
     for (var i = 0; i < dog.length; i++) {
       if (dog[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Собака');
+        $('#yearImage').attr('src', 'img/year-animals/dog.svg');
       }
     }
     for (var i = 0; i < pig.length; i++) {
       if (pig[i] == $('#yearStatus').text()) {
         $('#yourAnimal').text('Свинья');
+        $('#yearImage').attr('src', 'img/year-animals/pig.svg');
       }
     }
   });
