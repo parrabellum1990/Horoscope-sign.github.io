@@ -220,6 +220,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign, #yourAnimal').text(''),
       $('#zodiacImage').attr('src', 'img/main-img.svg');
+      $('#yearImage').attr('src', 'img/main-img.svg');
   });
 
   // year:
@@ -364,6 +365,6 @@ $(document).ready(function () {
       }
     }
   });
-
+// Добавить очистку годов
 });
 
