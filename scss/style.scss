@@ -7,7 +7,6 @@ $fontLobster: "Lobster", cursive;
 html,
 body {
   height: 100%;
-  overflow: hidden;
   font-family: $fontLobster;
 }
 
@@ -50,8 +49,37 @@ h1 {
 }
 // shadow around image
 .img-padding {
+  width: 50%;
   padding: 30px;
   border-radius: 50%;
   background-color: rgba(133, 83, 10, 0.5);
   box-shadow: 0 0 15px rgba(133, 83, 10, 0.5);
+}
+
+// md:
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .img-padding {
+    width: 65%;
+  }
+}
+// sm:
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .img-padding {
+    width: 65%;
+    padding: 20px;
+  }
+}
+// col:
+@media screen and (max-width: 575px) and (min-width: 319px) {
+  .img-padding {
+    width: 75%;
+    padding: 10px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  .header h1 {
+  font-size: 28px;
+  margin-top: -20px;
+}
 }
