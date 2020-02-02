@@ -1,17 +1,24 @@
+// import bootstrap4
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// font variable
+$fontLobster: "Lobster", cursive;
 
-// option in dropdown with hover
-option{
-  padding: 5px 15px;
+// full screen picture
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: $fontLobster;
 }
 
-option:hover{
-  cursor: pointer;
+// option in dropdown with hover
+option {
+  padding: 5px 20px;
 }
 
 // main background image
 .body-wrap {
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   position: relative;
   &::before {
@@ -23,8 +30,17 @@ option:hover{
     right: 0;
     position: absolute;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.5;
   }
+}
+
+// title text
+.header p,
+h1 {
+  color: rgb(44, 42, 42);
+}
+.header p {
+  font-size: 22px;
 }
 
 // Page styles
@@ -32,19 +48,10 @@ option:hover{
   height: 300px;
   overflow-y: scroll;
 }
-
-// style for hide zodiac image:
-.hide{
-  display: none;
-}
-
-.show{
-  display: inline;
-}
-
-.img-padding{
+// shadow around image
+.img-padding {
   padding: 30px;
   border-radius: 50%;
-  background-color: rgba(133, 83, 10, .5);
-  box-shadow: 0 0 15px rgba(133, 83, 10, .5);
+  background-color: rgba(133, 83, 10, 0.5);
+  box-shadow: 0 0 15px rgba(133, 83, 10, 0.5);
 }
