@@ -103,6 +103,14 @@ $(document).ready(function () {
   });
   $('#February').click(function (e) {
     $('#monthStatus').html($('#February').text());
+    // var februaryFix = $('#monthStatus').text();
+    // if (februaryFix == "Февраль") {
+    //   $('#birthDay30').hide();
+    //   $('#birthDay31').hide();
+    // } else {
+    //   $('#birthDay31').show();
+    //   $('#birthDay30').show();
+    // }
   });
   $('#March').click(function (e) {
     $('#monthStatus').html($('#March').text());
@@ -133,6 +141,26 @@ $(document).ready(function () {
   });
   $('#December').click(function (e) {
     $('#monthStatus').html($('#December').text());
+  });
+
+  // February date fix:
+  $('.menu-limiter').click(function (e) {
+    e.preventDefault();
+    var februaryFix = $('#monthStatus').text();
+    var februaryFixDay = $('#dayStatus').text();
+    if (februaryFix == "Февраль" && februaryFixDay > 29) {
+      // alert('manda');
+      $('#birthDay30').hide();
+      $('#birthDay31').hide();
+      $('#dayStatus').text(29);
+    } else {
+      if (februaryFix !== "Февраль") {
+        $('#birthDay31').show();
+        $('#birthDay30').show();
+      } else {
+
+      }
+    }
   });
 
   // finding your horoscope sign
@@ -220,7 +248,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('#dayStatus, #monthStatus, #yearStatus, #zodiacSign, #yourAnimal').text(''),
       $('#zodiacImage').attr('src', 'img/main-img.svg');
-      $('#yearImage').attr('src', 'img/main-img.svg');
+    $('#yearImage').attr('src', 'img/main-img.svg');
   });
 
   // year:
@@ -365,6 +393,6 @@ $(document).ready(function () {
       }
     }
   });
-// Добавить очистку годов
+  // Добавить очистку годов
 });
 
