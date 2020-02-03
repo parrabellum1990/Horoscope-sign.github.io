@@ -103,14 +103,6 @@ $(document).ready(function () {
   });
   $('#February').click(function (e) {
     $('#monthStatus').html($('#February').text());
-    // var februaryFix = $('#monthStatus').text();
-    // if (februaryFix == "Февраль") {
-    //   $('#birthDay30').hide();
-    //   $('#birthDay31').hide();
-    // } else {
-    //   $('#birthDay31').show();
-    //   $('#birthDay30').show();
-    // }
   });
   $('#March').click(function (e) {
     $('#monthStatus').html($('#March').text());
@@ -154,11 +146,16 @@ $(document).ready(function () {
       $('#birthDay31').hide();
       $('#dayStatus').text(29);
     } else {
-      if (februaryFix !== "Февраль") {
-        $('#birthDay31').show();
-        $('#birthDay30').show();
+      if (februaryFix == "Февраль") {
+        $('#birthDay30').hide();
+        $('#birthDay31').hide();
       } else {
+        if (februaryFix !== "Февраль") {
+          $('#birthDay31').show();
+          $('#birthDay30').show();
+        } else {
 
+        }
       }
     }
   });
